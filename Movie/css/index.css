@@ -3,7 +3,7 @@
 .header .text{position:absolute; left:250px; top:10px;}
 .text input{width:365px; height:27px; border:1px solid #ccc; border-right:none; padding-left:5px;}
 .text div{width:90px; height:30px; }
-.header .menu{position:absolute; right:84px; top:15px;}
+.header .menu{position:absolute; right:60px; top:15px;}
 .menu li{padding-left:5px; padding-right:5px;}
 .menu li a{color:#fff;}
 
