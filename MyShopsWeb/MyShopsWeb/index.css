@@ -1,0 +1,37 @@
+.carousel-inner > .item > img{
+  width: 100%;
+  max-height: 300px;
+}
+
+
+
+/* 头部 */
+.navbar-form >.form-group > .form-control{
+  min-width:400px;
+  position:relative;
+  right:170px;
+}
+
+.navbar-form > .btn{
+  position:relative;
+  right:170px;
+}
+
+.btn-group-lg>.btn, .btn-lg{
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  position: relative;
+  left: 160px;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 8px 160px;
+}
+.row img{
+  max-width: 400px;
+  max-height: 200px;
+}
