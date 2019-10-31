@@ -1,26 +1,165 @@
 <!DOCTYPE html>
 <html lang="ch">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/base.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
     <title>我的个人信息</title>
+    <style>
+        .first {
+            margin-right: 1150px;
+            margin-left: 300px;
+            margin-top: 110px;
+            padding-bottom: 10px;
+            position: fixed;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+        }
+
+        .Personal {
+            /* position: fixed; */
+            padding: 10px 10px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .Personal-frame {
+            padding: 5px 5px 5px 5px;
+            background-color: rgb(255, 255, 255);
+            /* position:absolute; */
+        }
+
+        .Personal-inside {
+            padding: 5px 0px 5px 0px;
+        }
+
+        .Personal-inside img {
+            padding: 5px 5px 5px 5px;
+            background-color: rgb(218, 218, 218);
+        }
+
+        .MyUserName {
+            padding: 5px 10px 10px 10px;
+            text-align: center;
+
+        }
+
+        .Personal-out {
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: #ffffff;
+        }
+
+        .Personal-Navbar {
+            border-bottom: 5px solid #ffffff;
+        }
+
+        .Personal-Navbar a {
+            text-align: center;
+            line-height: 20px;
+            background-color: #eaf7de;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid #eeeeee;
+            color: #000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        /* 按钮 */
+        .Button-Member {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: #1e94f4;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 5px;
+            width: 100px;
+            height: 35px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .Button-Member a {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+
+        /* 右边框 */
+        .Personal-Lowframe {
+            background-color: rgb(255, 255, 255);
+            width: 900px;
+            height: 100px;
+            margin: 10px;
+        }
+
+        .Lowframe-qt {
+            padding: 1px;
+            border-radius: 15px/50px;
+            border-style:outset;
+            border: 5px solid #e0e0e0ef;
+            background: #ffffff;
+            width: 894px;
+        }
+    </style>
 </head>
+
 <body>
-<div>
-    <div class="su clearfix" id="suction">
-        <div class="fl logo"></div>
+    <div>
+        <div class="su clearfix" id="suction">
+            <div class="fl logo"></div>
             <a href="./index.html">影视天堂网</a>
             <a class="uc" href="Landing.html">登录</a>
             <a class="uc" href="Registered.html">注册</a>
+        </div>
     </div>
-    <div>
-        <p>sdasasd</p>
+    <div class="Personal">
+        <div class="Personal first">
+            <div class="Personal-frame">
+                <ul class="Personal-out">
+                    <li class="Personal-inside">
+                        <img src="../Movie/images/touxiang/h1.jpg" width="200" height="200">
+                        <p class="MyUserName">用户名称</br></br>
+                            <button class="Button-Member"><a href="">充值会员</a></button>
+                        </p>
+                    </li>
+                    <li class="Personal-Navbar">
+                        <a href="">个人信息</a>
+                        <a href="">观看历史</a>
+                        <a href="">钱包</a>
+                        <a href="">订阅</a>
+                        <a href="#">影视缓存</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Personal-Lowframe">
+                <ul class="Lowframe-qt">
+                    <li>个人信息</li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>111</p>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
-        <script src="js/jquery-1.7.2.js"></script>
-        <script src="js/index.js"></script>
+
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
