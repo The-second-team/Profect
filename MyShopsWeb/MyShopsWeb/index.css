@@ -101,3 +101,99 @@
   position: -webkit-sticky;
   position: sticky;
 }
+.landing{
+  border-radius: 20px;
+  background: #8AC007;
+  padding: 15px; 
+  width: 200px;
+  height: 150px;    
+}
+
+.baby{
+	background:url(../images/德莱文.jpg) no-repeat;
+	width:462px;
+	height:170px;
+	position: absolute;
+	top:-51px;
+	left:0;
+}
+.account{
+	margin-top:150px;
+	margin-left:45px;
+}
+.account p{
+	margin-top:10px;
+	color: #000;
+}
+.account input{
+	width:268px;
+	height:30px;
+	border:1px solid #ccc;
+	padding-left:7px;
+}
+.memory{
+	margin-top:17px;
+	margin-left:90px;
+}
+.memory p{
+	margin-left:12px;
+	color: #000;
+}
+.memory input{
+	margin-top:2px;
+}
+.memory a{
+	color: #2196F3
+}
+.loginto{
+	width:265px;
+	height:32px;
+	background-color: #ccc;
+	text-align: center;
+	line-height:32px;
+	margin-left:90px;
+	margin-top:15px;
+}
+.Landin{
+	
+	width: 400px;
+    height: 500px;
+    position: absolute;
+    text-align: center;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;    
+}
+.fl {
+  float: left;
+}
+.agree {
+  margin-left: 97px;
+  width: 270px;
+  margin-top: 8px;
+}
+.agree a {
+  color: #2196F3;
+}
+.element.style {
+  margin-top: 8px;
+}
+.fr {
+  float: right;
+}
+.yzm {
+  width: 107px;
+  height: 30px;
+  margin-left: 10px;
+  background: url(1.jpg) no-repeat;
+  border: 1px solid #ccc;
+}
+.change {
+  width: 32px;
+  height: 32px;
+  background: url(change.png) no-repeat;
+  margin-left: 10px;
+  cursor: pointer;
+}
