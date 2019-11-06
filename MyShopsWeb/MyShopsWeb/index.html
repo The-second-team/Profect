@@ -35,14 +35,43 @@
   .carousel-caption p {
     text-align: justify;
   }
+
+
+  /* 弹出框 */
+  .popover.bottom {
+    margin-top: 0px;
+    left: 0px;
+  }
+
+
+
+
+    /* 列表 */
+    .list-group-item {
+      font-size: 16px;
+    }
+
+
+
+    /* 导航 */
+    .breadcrumb {
+      margin-bottom: 0;
+      border-radius: 0;
+      display: none;
+    }
 </style>
 
+
+<script>
+  $(document).ready(function () {
+    $('[data-toggle="popover"]').popover();
+  });
+</script>
+
+
+
+
 <body>
-
-
-
-
-
   <!-- //头部 -->
   <div class="topnav">
     <a class="active" href="#">登录</a>
@@ -57,16 +86,26 @@
 
 
   <div class="hp Home-Page">
-    <!-- 111 -->
-
 
     <!-- 导航栏 -->
     <ul class="nav nav-tabs">
       <li><a href="My.html">个人中心</a></li>
       <li><a href="#">应用导航</a></li>
-      <li><a href="#">客服中心</a></li>
+      <li><a href="#" title="Header" data-toggle="popover" data-placement="bottom" data-content="Content">客服中心</a></li>
       <li><a href="#">供应商社区</a></li>
     </ul>
+
+    <!-- 面包屑导航 -->
+    <nav class="breadcrumb">
+      <span class="breadcrumb-item active">Bootstrap</span>
+      <a class="breadcrumb-item" href="#">Home</a>
+      <a class="breadcrumb-item" href="#">Library</a>
+      <a class="breadcrumb-item" href="#">Data</a>
+    </nav>
+
+
+
+
 
 
 
@@ -110,6 +149,9 @@
         <span class="carousel-control-next-icon"></span>
       </a>
     </div>
+
+
+
 
 
 
@@ -184,7 +226,7 @@
     </div>
 
 
-    
+
   </div>
 
 

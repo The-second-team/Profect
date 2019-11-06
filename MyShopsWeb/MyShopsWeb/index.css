@@ -97,20 +97,14 @@
   width: 100%;
   height: 255px;
 }
-.carousel-caption h3{
-  font-size:14px;
-}
 .carousel-caption p{
-  font-size:8px;
+  font-size:10px;
 }
 
 .navbar-default {
   position: -webkit-sticky;
   position: sticky;
 }
-/* <<<<<<< HEAD */
-
-
 
 /* 底部分栏图片 */
 .col-msm-6{
@@ -118,7 +112,16 @@
 }
 
 
-/* ======= */
+
+
+
+
+
+
+
+
+
+/* 用户注册登录 */
 .landing{
   border-radius: 20px;
   background: #8AC007;
