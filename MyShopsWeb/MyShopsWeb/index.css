@@ -1,5 +1,7 @@
 /* 头部 */
-  * {box-sizing: border-box;}
+  * {
+    box-sizing: border-box;
+  }
   body {
   /* margin-left: 10px; */
   /* margin-right: 10px; */
