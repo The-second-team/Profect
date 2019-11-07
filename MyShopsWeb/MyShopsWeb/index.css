@@ -41,6 +41,7 @@
   padding: 8px 8px 4px 8px;
   margin-top: 8px;
   font-size: 17px;
+  width: 460px;
   border: none;
 }
 
@@ -86,7 +87,6 @@
   margin-right: 0;
 }
 
-
 .nav>li{
   width: 25%;
 }
@@ -106,19 +106,11 @@
   position: sticky;
 }
 
+
 /* 底部分栏图片 */
 .col-msm-6{
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* 用户注册登录 */
@@ -226,4 +218,3 @@
   height: 150px;
   margin-top: 7px;
 }
-/* >>>>>>> 500225d0f52e5482a13e279aa443ff6cc0f6eea2 */
