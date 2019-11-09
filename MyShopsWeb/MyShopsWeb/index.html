@@ -38,18 +38,18 @@
     text-align: justify;
   }
 
-  
+
 
 
   /* 导航弹出 */
-  .modal-body{
+  .modal-body {
     margin: auto;
   }
 
 
 
 
-/* 弹出框 */
+  /* 弹出框 */
 
   .popover.bottom {
     margin-top: 0px;
@@ -60,11 +60,9 @@
     display: none;
   }
 
-
   .nav-tabs a {
     color: #007bff
   }
-
 
   a:not([href]):not([tabindex]) {
     color: #007bff;
@@ -109,7 +107,7 @@
   .breadcrumb {
     margin-bottom: 0;
     border-radius: 0;
-    display: none;
+    /* display: none; */
   }
 
 
@@ -163,7 +161,6 @@
 
 
 
-
 <body>
   <!-- //头部 -->
   <div class="topnav">
@@ -176,8 +173,6 @@
     </div>
   </div>
 
-
-
   <div class="hp Home-Page">
 
     <!-- 导航栏 -->
@@ -188,12 +183,13 @@
             <div class="modal-content">
               <!-- 模态框头部 -->
               <div class="modal-header">
-                <h4 class="modal-title">请登录</h4>
+                <h4 class="modal-title" style="text-align: center;">请登录</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <!-- 模态框主体 -->
               <div class="modal-body">
-                <button type="button" class="btn btn-secondary" style="margin: auto;"><a href="registered.html">登录</a></button>
+                <button type="button" class="btn btn-secondary" style="margin: auto;background-color: #0089ff;"><a
+                    href="landing.html" style="color: white;">登录</a></button>
               </div>
             </div>
           </div>
@@ -202,16 +198,17 @@
       <li><a href="#">应用导航</a></li>
       <li><a title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom"
           data-content="#breadcrumb">商品货源</a>
-        <nav class="breadcrumb" style="display: none;">
+
+        <!-- <nav class="breadcrumb">
           <span class="breadcrumb-item active">Bootstrap</span>
           <a class="breadcrumb-item" href="#">Home</a>
           <a class="breadcrumb-item" href="#">Library</a>
           <a class="breadcrumb-item" href="#">Data</a>
-        </nav>
+        </nav> -->
       </li>
       <li><a href="#">供应商社区</a></li>
     </ul>
-    ​
+
     <!-- 轮播图 -->
     <div id="demo" class="carousel slide" data-ride="carousel">
 
