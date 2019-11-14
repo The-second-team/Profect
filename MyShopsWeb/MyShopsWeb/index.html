@@ -18,104 +18,9 @@
   <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
 
   <link rel="stylesheet" href="index.css">
-
   <title>MyWork</title>
 </head>
 <style>
-  /* 头部 */
-
-
-
-  /* 分栏 */
-  .row {
-    margin-top: 10px;
-    margin-left: 2px;
-    width: 100%;
-  }
-
-
-  .carousel-caption p {
-    text-align: justify;
-  }
-
-
-
-
-  /* 导航弹出 */
-  .modal-body {
-    margin: auto;
-  }
-
-
-
-
-  /* 弹出框 */
-
-  .popover.bottom {
-    margin-top: 0px;
-    left: 0px;
-  }
-
-  .popover.bottom>.arrow {
-    display: none;
-  }
-
-  .nav-tabs a {
-    color: #007bff
-  }
-
-  a:not([href]):not([tabindex]) {
-    color: #007bff;
-  }
-
-  a:not([href]):not([tabindex]):hover {
-    color: #007bff;
-  }
-
-
-
-
-
-  /* 列表 */
-  .list-group {
-    margin-top: 10px;
-    margin-bottom: 0px;
-  }
-
-
-  .list-group-item {
-    font-size: 16px;
-  }
-
-
-  .fa {
-    position: absolute;
-    right: 0;
-    margin-top: 2px;
-    padding-right: 10px;
-    font-size: 18px;
-    color: #128ae2;
-
-  }
-
-
-
-
-
-
-  /* 导航 */
-  .breadcrumb {
-    margin-bottom: 0;
-    border-radius: 0;
-    /* display: none; */
-  }
-
-
-
-
-
-
-
   /* 尾部 */
   .Web-tail {
     margin-bottom: 10px;
@@ -123,16 +28,12 @@
     background-color: rgb(33, 150, 240);
   }
 
-
   .Web-tail p {
     color: rgb(80, 80, 80);
   }
 
-
-
   .Web-tail a {
     color: white;
-
   }
 
   .Service-list {
@@ -150,9 +51,11 @@
   .modal-footer {
     border-top: 0;
   }
+
+  .carousel-indicators {
+    display: none;
+  }
 </style>
-
-
 <script>
   $(function () {
     $("[data-toggle='popover']").popover();
@@ -164,7 +67,7 @@
 <body>
   <!-- //头部 -->
   <div class="topnav">
-    <a class="active" href="#">登录</a>
+    <a class="active" href="My.html">登录</a>
     <div class="search-container">
       <form action="/action_page.php">
         <input type="text" placeholder="搜索.." name="search">
@@ -172,7 +75,6 @@
       </form>
     </div>
   </div>
-
   <div class="hp Home-Page">
 
     <!-- 导航栏 -->
@@ -182,43 +84,57 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <!-- 模态框头部 -->
+              <div><button type="button" class="close" data-dismiss="modal">&times;</button></div>
               <div class="modal-header">
                 <h4 class="modal-title" style="text-align: center;">请登录</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
               </div>
               <!-- 模态框主体 -->
-              <div class="modal-body">
+              <div class="modal-body" style="margin: auto;">
                 <button type="button" class="btn btn-secondary" style="margin: auto;background-color: #0089ff;"><a
-                    href="landing.html" style="color: white;">登录</a></button>
+                    href="landing.html"style="color: white;">登录</a></button>
               </div>
             </div>
           </div>
         </div>
       </li>
-      <li><a href="#">应用导航</a></li>
-      <li><a title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom"
-          data-content="#breadcrumb">商品货源</a>
-
-        <!-- <nav class="breadcrumb">
-          <span class="breadcrumb-item active">Bootstrap</span>
-          <a class="breadcrumb-item" href="#">Home</a>
-          <a class="breadcrumb-item" href="#">Library</a>
-          <a class="breadcrumb-item" href="#">Data</a>
-        </nav> -->
-      </li>
+      <li><a data-toggle="collapse" href="#collapseTwo">应用导航</a></li>
+      <li><a data-toggle="collapse" href="#collapseThree">商品货源</a></li>
       <li><a href="#">供应商社区</a></li>
     </ul>
+    <!-- 折叠 -->
+    <div id="collapseTwo" class="collapse">
+      <nav class="breadcrumb">
+        <span class="breadcrumb-item active">相关内容</span>
+      </nav>
+      <nav class="breadcrumb" style="background-color: rgb(255, 255, 255);">
+        <a class="breadcrumb-item" href="#">行业市场</a>
+        <a class="breadcrumb-item" href="#">特色市场</a>
+        <a class="breadcrumb-item" href="#">商品采购</a>
+        <a class="breadcrumb-item" href="#">交易平台</a>
+      </nav>
+    </div>
+    <div id="collapseThree" class="collapse">
+      <nav class="breadcrumb">
+        <span class="breadcrumb-item active">地区</span>
+      </nav>
+      <nav class="breadcrumb" style="background-color: rgb(255, 255, 255);">
+        <a class="breadcrumb-item" href="#">美国</a>
+        <a class="breadcrumb-item" href="#">德国</a>
+        <a class="breadcrumb-item" href="#">中国</a>
+        <a class="breadcrumb-item" href="#">日本</a>
+        <a class="breadcrumb-item" href="#">韩国</a>
+        <a href="" style="position:absolute;right: 0;">≥≥更多</a>
+      </nav>
+    </div>
 
     <!-- 轮播图 -->
     <div id="demo" class="carousel slide" data-ride="carousel">
-
       <!-- 指示符 -->
       <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
         <li data-target="#demo" data-slide-to="1"></li>
         <li data-target="#demo" data-slide-to="2"></li>
       </ul>
-
       <!-- 轮播图片 -->
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -250,13 +166,6 @@
       </a>
     </div>
 
-
-
-
-
-
-
-
     <!-- 列表 -->
 
     <ul class="list-group">
@@ -268,104 +177,111 @@
       <div class="row">
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-3">
           <div class="thumbnail">
-            <a href=""><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
+            <a href="#"><img src="../MyShopsWeb/photo/其他视图/qt1.jpg" alt="通用的占位符缩略图"></a>
             <div class="caption">
               <h3>红富士草莓</h3>
-              <p>2箱起批<p>已售100批</p>
-              </p>
+              <p style="margin-right: 125px;">2箱起批</p>
+              <p>已售100批</p>
+
               <p>
-                <p style="text-align:right; font-size: 20px;">¥200</p>
+                <h4 style="text-align:right;font-size: 18px;margin-right: 5px;">¥200</h4>
               </p>
             </div>
           </div>
@@ -375,13 +291,13 @@
 
 
 
-
-
     <!-- 尾部 -->
     <div class="Service Web-tail">
       <div class="Service-box">
         <div class="Service-list">
           <p>
+            <a href="#">联系客服</a>
+            &nbsp;|&nbsp;
             <a href="#">技术支持</a>
             &nbsp;|&nbsp;
             <a href="#">资料</a>
@@ -400,16 +316,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
-
-
-
-
-
-
-
 
 </body>
 
