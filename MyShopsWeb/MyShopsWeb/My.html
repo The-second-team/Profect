@@ -16,7 +16,6 @@
 
   <link rel="stylesheet" href="index.css">
   <script>
-
     $(function () {
       $('#myTab li:eq(1) a').tab('show');
     });
@@ -76,8 +75,8 @@
       width: 100%;
       height: 100%;
     }
-
   </style>
+
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
@@ -92,6 +91,19 @@
     </div>
   </nav>
 
+  <div class="container" style="margin: auto;">
+    <div class="card" style="width:300px;margin: auto;">
+      <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
+        style="width:100%">
+      <div class="card-body">
+        <input type="file" id="myFile" name="filename2">
+
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- 标签页 -->
   <div class="bianqian" style="margin: 10px;">
     <ul id="myTab" class="nav nav-tabs">
@@ -107,18 +119,13 @@
           <div class="row">
             <nav class="col-sm-3 col-4" id="myScrollspy">
               <ul class="nav nav-pills flex-column">
-
-
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#section2">Link 1</a>
-                        <a class="dropdown-item" href="#section22">Link 2</a>
-                      </div>
-                    </li>
-
-
-
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section2">Link 1</a>
+                    <a class="dropdown-item" href="#section22">Link 2</a>
+                  </div>
+                </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
                   <div class="dropdown-menu">
@@ -126,8 +133,6 @@
                     <a class="dropdown-item" href="#section33">Link 2</a>
                   </div>
                 </li>
-
-
               </ul>
             </nav>
             <div class="col-sm-9 col-8">
@@ -150,33 +155,62 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-        <!-- <div class="fx-con">
-          <div class="fx-it"> -->
-        <!-- 垂直标签 -->
-        <!-- <div class="container">
-              <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">买家方</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">卖家方</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">服务</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="fx-ithot">flex item 2</div>
-        </div> -->
       </div>
       <div class="tab-pane fade" id="ios">
-        <p>iOS 是一个由苹果公司开发和发布的手机操作系统。</p>
+        <div style="padding: 100px 100px 10px;">
+          <form class="bs-example bs-example-form" role="form">
+            <div class="input-group">
+              <span class="input-group-addon">用户名</span>
+              <input type="text" class="form-control">
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">姓名</span>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">联系电话</span>
+              <input type="text" class="form-control">
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">地址</span>
+              <input type="text" class="form-control">
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">电子邮箱</span>
+              <input type="text" class="form-control" placeholder="">
+              <span class="input-group-addon">@</span>
+            </div>
+            <br>
+            <div class="input-group">
+              <span class="input-group-addon">传真</span>
+              <input type="text" class="form-control">
+              <span class="input-group-addon">.00</span>
+            </div>
+            <br>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default">请选择银行卡</button>
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">农业银行</a></li>
+                <li><a href="#">建设银行</a></li>
+                <li><a href="#">中国工商银行</a></li>
+                <li><a href="#">中国银行</a></li>
+              </ul>
+            </div>
+            <br>
+            <div class="container">
+              <form>
+                <label class="radio-inline"><input type="radio" name="optradio">支付宝</label>
+                <label class="radio-inline"><input type="radio" name="optradio">微信</label>
+              </form>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
