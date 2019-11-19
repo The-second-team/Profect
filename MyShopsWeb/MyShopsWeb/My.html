@@ -14,6 +14,7 @@
   <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
   <link rel="stylesheet" href="index.css">
   <script>
     $(function () {
@@ -75,11 +76,27 @@
       width: 100%;
       height: 100%;
     }
+
+    .nav-pills>li+li {
+      margin-left: 0px;
+    }
+
+    .bg-success {
+      background-color: #ffffff !important;
+    }
+
+    .card {
+      margin: 10px;
+    }
+
+    div.col-8 div {
+      height: auto;
+    }
   </style>
 
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+<body>
   <!-- 头部 -->
   <nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
@@ -107,10 +124,10 @@
   <!-- 标签页 -->
   <div class="bianqian" style="margin: 10px;">
     <ul id="myTab" class="nav nav-tabs">
-      <li class="active">
+      <li class="active" data-spy="scroll" data-target="#myScrollspy" data-offset="1">
         <a href="#home" data-toggle="tab">商品交易</a>
       </li>
-      <li><a href="#ios" data-toggle="tab">个人信息</a></li>
+      <li><a href="#Personaldata" data-toggle="tab">个人信息</a></li>
     </ul>
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade in active" id="home">
@@ -120,76 +137,136 @@
             <nav class="col-sm-3 col-4" id="myScrollspy">
               <ul class="nav nav-pills flex-column">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">买家方</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#section2">Link 1</a>
-                    <a class="dropdown-item" href="#section22">Link 2</a>
+                    <a class="dropdown-item" href="#section1">已购商品</a>
+                    <a class="dropdown-item" href="#section2">待付款商品</a>
+                    <a class="dropdown-item" href="#section3">优惠卷</a>
                   </div>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Section 4</a>
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">卖家方</a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#section3">Link 1</a>
-                    <a class="dropdown-item" href="#section33">Link 2</a>
+                    <a class="dropdown-item" href="#section4">已售出商品</a>
+                    <a class="dropdown-item" href="#section5">正在发布的商品</a>
+                    <a class="dropdown-item" href="#section6">商品管理</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">服务</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#section7">店面装修</a>
+                    <a class="dropdown-item" href="#section8">运营和维护</a>
                   </div>
                 </li>
               </ul>
             </nav>
             <div class="col-sm-9 col-8">
-              <div id="section2" class="bg-warning" style="background-color: red;">
-                <h1>Section 2</h1>
-                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              <h1>买家方</h1>
+              <div id="section1" class="bg-success">
+                <div class="card">
+                  <div class="card-header">已购商品</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
               </div>
-              <div id="section22" class="bg-warning" style="background-color:rgb(219, 253, 28) ">
-                <h1>Section 2</h1>
-                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              <div id="section2" class="bg-success">
+                <div class="card">
+                  <div class="card-header">待付款商品</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
               </div>
-              <div id="section3" class="bg-secondary" style="background-color: rgb(140, 253, 65)">
-                <h1>Section 3</h1>
-                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              <div id="section3" class="bg-success">
+                <div class="card">
+                  <div class="card-header">优惠卷</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
               </div>
-              <div id="section3" class="bg-secondary" style="background-color:rgb(28, 253, 197) ">
-                <h1>Section 3</h1>
-                <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+              <h1>卖家方</h1>
+              <div id="section4" class="bg-success">
+                <div class="card">
+                  <div class="card-header">已售出商品</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
+              </div>
+              <div id="section5" class="bg-success">
+                <div class="card">
+                  <div class="card-header">正在发布的商品</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
+              </div>
+              <div id="section6" class="bg-success">
+                <div class="card">
+                  <div class="card-header">商品管理</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
+              </div>
+              <h1>服务</h1>
+              <div id="section7" class="bg-success">
+                <div class="card">
+                  <div class="card-header">店面装修</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
+              </div>
+              <div id="section8" class="bg-success">
+                <div class="card">
+                  <div class="card-header">运营和维护</div>
+                  <div class="card-body">内容
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="ios">
+
+      <div class="tab-pane fade" id="Personaldata">
         <div style="padding: 100px 100px 10px;">
           <form class="bs-example bs-example-form" role="form">
+            
             <div class="input-group">
               <span class="input-group-addon">用户名</span>
               <input type="text" class="form-control">
             </div>
+            
             <br>
             <div class="input-group">
               <span class="input-group-addon">姓名</span>
               <input type="text" class="form-control" placeholder="">
             </div>
+            
             <br>
             <div class="input-group">
               <span class="input-group-addon">联系电话</span>
               <input type="text" class="form-control">
             </div>
+            
             <br>
             <div class="input-group">
               <span class="input-group-addon">地址</span>
               <input type="text" class="form-control">
             </div>
+            
             <br>
             <div class="input-group">
               <span class="input-group-addon">电子邮箱</span>
               <input type="text" class="form-control" placeholder="">
               <span class="input-group-addon">@</span>
             </div>
+            
             <br>
             <div class="input-group">
               <span class="input-group-addon">传真</span>
               <input type="text" class="form-control">
               <span class="input-group-addon">.00</span>
             </div>
+            
             <br>
             <div class="btn-group">
               <button type="button" class="btn btn-default">请选择银行卡</button>
@@ -210,6 +287,7 @@
               </form>
             </div>
           </form>
+
         </div>
       </div>
     </div>

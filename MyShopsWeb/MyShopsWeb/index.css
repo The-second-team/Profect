@@ -203,6 +203,8 @@
   .carousel-caption p {
     text-align: justify;
   }
+
+  
   /* 用户注册登录 */
   .landing {
     border-radius: 20px;
@@ -212,7 +214,7 @@
     height: 150px;
   }
   .baby {
-    background: url(../images/德莱文.jpg) no-repeat;
+    background: url(../MyShopsWeb/photo/其他视图/德莱文.jpg) no-repeat;
     width: 462px;
     height: 170px;
     position: absolute;
@@ -300,14 +302,14 @@
     width: 107px;
     height: 30px;
     margin-left: 10px;
-    background: url(1.jpg) no-repeat;
+    background: url(../MyShopsWeb/photo/其他视图/1.jpg) no-repeat;
     border: 1px solid #ccc;
   }
 
   .change {
     width: 32px;
     height: 32px;
-    background: url(change.png) no-repeat;
+    background: url(../MyShopsWeb/photo/其他视图/change.png) no-repeat;
     margin-left: 10px;
     cursor: pointer;
   }
