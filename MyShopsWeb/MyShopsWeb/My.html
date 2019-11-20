@@ -85,6 +85,14 @@
       background-color: #ffffff !important;
     }
 
+    .bg-warning {
+      background-color: #ffffff !important;
+    }
+
+    .bg-secondary {
+      background-color: #ffffff !important;
+    }
+
     .card {
       margin: 10px;
     }
@@ -110,8 +118,7 @@
 
   <div class="container" style="margin: auto;">
     <div class="card" style="width:300px;margin: auto;">
-      <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image"
-        style="width:100%">
+      <img class="card-img-top" src="../MyShopsWeb/photo/其他视图/img_avatar.png" alt="Card image" style="width:100%">
       <div class="card-body">
         <input type="file" id="myFile" name="filename2">
 
@@ -129,6 +136,7 @@
       </li>
       <li><a href="#Personaldata" data-toggle="tab">个人信息</a></li>
     </ul>
+
     <div id="myTabContent" class="tab-content">
       <div class="tab-pane fade in active" id="home">
 
@@ -185,21 +193,21 @@
                 </div>
               </div>
               <h1>卖家方</h1>
-              <div id="section4" class="bg-success">
+              <div id="section4" class="bg-warning">
                 <div class="card">
                   <div class="card-header">已售出商品</div>
                   <div class="card-body">内容
                   </div>
                 </div>
               </div>
-              <div id="section5" class="bg-success">
+              <div id="section5" class="bg-warning">
                 <div class="card">
                   <div class="card-header">正在发布的商品</div>
                   <div class="card-body">内容
                   </div>
                 </div>
               </div>
-              <div id="section6" class="bg-success">
+              <div id="section6" class="bg-warning">
                 <div class="card">
                   <div class="card-header">商品管理</div>
                   <div class="card-body">内容
@@ -207,14 +215,14 @@
                 </div>
               </div>
               <h1>服务</h1>
-              <div id="section7" class="bg-success">
+              <div id="section7" class="bg-secondary">
                 <div class="card">
                   <div class="card-header">店面装修</div>
                   <div class="card-body">内容
                   </div>
                 </div>
               </div>
-              <div id="section8" class="bg-success">
+              <div id="section8" class="bg-secondary">
                 <div class="card">
                   <div class="card-header">运营和维护</div>
                   <div class="card-body">内容
@@ -229,65 +237,64 @@
       <div class="tab-pane fade" id="Personaldata">
         <div style="padding: 100px 100px 10px;">
           <form class="bs-example bs-example-form" role="form">
-            
+
             <div class="input-group">
               <span class="input-group-addon">用户名</span>
               <input type="text" class="form-control">
             </div>
-            
+
             <br>
             <div class="input-group">
               <span class="input-group-addon">姓名</span>
               <input type="text" class="form-control" placeholder="">
             </div>
-            
+
             <br>
             <div class="input-group">
               <span class="input-group-addon">联系电话</span>
               <input type="text" class="form-control">
             </div>
-            
+
             <br>
             <div class="input-group">
               <span class="input-group-addon">地址</span>
               <input type="text" class="form-control">
             </div>
-            
+
             <br>
             <div class="input-group">
               <span class="input-group-addon">电子邮箱</span>
               <input type="text" class="form-control" placeholder="">
               <span class="input-group-addon">@</span>
             </div>
-            
+
             <br>
             <div class="input-group">
               <span class="input-group-addon">传真</span>
               <input type="text" class="form-control">
               <span class="input-group-addon">.00</span>
             </div>
-            
             <br>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default">请选择银行卡</button>
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">农业银行</a></li>
-                <li><a href="#">建设银行</a></li>
-                <li><a href="#">中国工商银行</a></li>
-                <li><a href="#">中国银行</a></li>
-              </ul>
-            </div>
-            <br>
-            <div class="container">
+            <div class="money">
+              <div class="btn-group">
+                <button type="button" class="btn btn-default">请选择银行卡</button>
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">农业银行</a></li>
+                  <li><a href="#">建设银行</a></li>
+                  <li><a href="#">中国工商银行</a></li>
+                  <li><a href="#">中国银行</a></li>
+                </ul>
+              </div>
               <form>
                 <label class="radio-inline"><input type="radio" name="optradio">支付宝</label>
                 <label class="radio-inline"><input type="radio" name="optradio">微信</label>
               </form>
             </div>
+            <br>
           </form>
-
+          <button type="button" class="btn btn-primary" style="">主要按钮</button>
         </div>
       </div>
     </div>
