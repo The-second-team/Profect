@@ -209,6 +209,7 @@
   .landing {
     border-radius: 20px;
     background: #8AC007;
+    
     padding: 15px;
     width: 200px;
     height: 150px;
@@ -217,14 +218,11 @@
     background: url(../MyShopsWeb/photo/其他视图/德莱文.jpg) no-repeat;
     width: 462px;
     height: 170px;
-    position: absolute;
-    top: -51px;
-    left: 0;
   }
 
   .account {
-    margin-top: 150px;
-    margin-left: 45px;
+    margin-top: 40px;
+    margin-left: 35px;
   }
 
   .account p {
@@ -240,8 +238,8 @@
   }
 
   .memory {
-    margin-top: 17px;
-    margin-left: 90px;
+    margin-top: 20px;
+    margin-left: 95px;
   }
 
   .memory p {
@@ -260,18 +258,20 @@
   .loginto {
     width: 265px;
     height: 32px;
-    background-color: #ccc;
+    background-color: #3785fb;
     text-align: center;
     line-height: 32px;
     margin-left: 90px;
     margin-top: 15px;
+  }
+  .loginto a{
+    color: white;
   }
 
   .Landin {
 
     width: 400px;
     height: 500px;
-    position: absolute;
     text-align: center;
     left: 0;
     right: 0;
